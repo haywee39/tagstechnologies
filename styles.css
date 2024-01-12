@@ -6,6 +6,7 @@
 
 body{
     min-height: 100vh;
+    width: 100vw;
     background: black;
     
 }
@@ -26,7 +27,7 @@ body{
     position: relative;
     min-width: 30px;
     height: 30px;
-    background: orange;
+    background: orangered;
     border-radius: 50%;
     box-shadow: 0 0 0 2px white,
     0 0 20px orange,
@@ -204,8 +205,8 @@ nav {
    position: relative;
    font-size: 80px;
    color: white;
-   margin: 20px 0 0;
-   color: #fff;
+   margin: 10px 0 0;
+   color: rgb(241, 116, 241);;
    overflow: hidden;
    z-index: 1;
    padding-bottom: 20px;
@@ -229,14 +230,14 @@ nav {
    height: 100%;
    background: linear-gradient(45deg,transparent 0%, #000 0%, #000 100%);
    animation: fadein 4.5s linear forwards;
-   animation-delay: 3.5s;
+   animation-delay: 4.5s;
 }
 @keyframes fadein {
    0%{
        right: -20%;
    }
    100%{
-       right: 110%;
+       right: 100%;
    }
 }
 
@@ -256,3 +257,71 @@ video{
    mix-blend-mode: screen;
    margin-bottom: 90px;
 }
+
+.animated-text{
+   font-size: 34px;
+   font-weight: 600;
+   min-width: 280px;
+   color: white;
+}
+
+.animated-text span{
+   position: relative;
+}
+
+.animated-text span::before{
+   content:'Designer.';
+   color: red;
+   animation: words 20s infinite;
+}
+
+.animated-text span::after{
+   content: '';
+   background-color: black;
+   position: absolute;
+   width: calc(100% + 8px);
+   height: 100%;
+   border-left: 2px solid rgb(241, 116, 241);
+   right: -8px;
+   animation: cursor .6s infinite,typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+   to{
+       border-left: 2px solid rgb(241, 116, 241);
+   }
+}
+@keyframes words{
+  0%,20%{
+   content: 'Designer';
+   color: red;
+  }
+  21%,40%{
+   content: 'Coder';
+   color: rgb(241, 116, 241);
+  }
+  41%,60%{
+   content: 'Youtuber';
+   color: rgb(241, 116, 241);
+  }
+  61%,80%{
+   content: 'Singer';
+   color: rgb(241, 116, 241);
+
+  }
+  81%,100%{
+   content: 'Teacher';
+   color: rgb(241, 116, 241);
+
+  }
+   
+}
+
+@keyframes typing{
+   10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+       width: 0;
+   }
+
+   5%,20%,25%,40%,45%,60%,65%,80%,85%{
+       width: calc(100% + 8px);
+   }
+} 
