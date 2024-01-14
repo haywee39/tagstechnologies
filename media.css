@@ -89,6 +89,11 @@
     width: 60%;
     height: 50%;
  }
+
+ /* STYLING FOR THE VID ANIMATION OVER COMPANY NAME BEGINS FROM HERE */
+video{
+   margin-bottom:80px;
+}
 }
 
 
