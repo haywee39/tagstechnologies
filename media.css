@@ -94,6 +94,15 @@
 video{
    margin-bottom:80px;
 }
+
+/* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
+.animated-text{
+   font-size: 16px;
+   font-weight: 300;
+   min-width: 100%;
+   color: white;
+}
+
 }
 
 
