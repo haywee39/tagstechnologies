@@ -4,22 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    width: 100vw;
-    background: black;
-    
-}
 /* STYLING FOR THE BUBBLE DROPS BEGINS FROM HERE */
 .bg{
-    position: absolute;
-    width: 100%;
+    /* position: relative; */
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
 .bubbles{
-    position: relative;
+    position: absolute;
     display: flex;
 }
 
@@ -57,7 +51,7 @@ body{
 header{
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     padding: 0 80px;
     /* z-index: 1; */
@@ -183,28 +177,31 @@ nav {
 
  /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
  #home{
-   position: absolute;
+   /* position: absolute; */
+   position: relative;
    width: 100%;
    height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   background-color: #000;
  }
- #home .content{
+
+ .content{
    display: flex;
-   justify-content: center;
-   align-items: center;
    flex-direction: column;
-   text-align: center;
-   max-width: 700px;
+   width: 100vw;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
  }
 
  #home .content h2{
    position: relative;
    font-size: 80px;
    color: white;
-   margin: 10px 0 0 0;
+   /* margin: 10px 0 0 0; */
    /* color: rgb(241, 116, 241);; */
    color: white;
    overflow: hidden;
@@ -216,7 +213,8 @@ nav {
    color: red;
  }
 
- #home .content p{
+ header p{
+   /* position: absolute; */
    font-size: 19px;
    color: white;
  }
@@ -229,7 +227,7 @@ nav {
    width: 120%;
    height: 100%;
    background: linear-gradient(45deg,transparent 0%, #000 0%, #000 100%);
-   animation: fadein 4.5s linear forwards;
+   animation: fadein 4.5s linear forwards ;
    animation-delay: 4.5s;
 }
 @keyframes fadein {
@@ -248,7 +246,7 @@ h2 span{
 
 /* STYLING FOR THE VID ANIMATION OVER COMPANY NAME BEGINS FROM HERE */
 video{
-   position: absolute;
+   position: absolute;                                                                                                                                                                                                                                                                                                                                                                 
    top: 10;
    left: 10%;
    width: 100%;
@@ -264,10 +262,15 @@ video{
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text{
    font-size: 34px;
-   font-weight: 600;
+   /* font-weight: 600; */
    min-width: 280px;
    color: white;
+   text-align: center;
 }
+.animated-text p{
+   font-size: 20px;
+}
+
 
 .animated-text span{
    position: relative;
@@ -277,6 +280,8 @@ video{
    content:'Designer.';
    color: red;
    animation: words 20s infinite;
+   /* font-weight: 600; */
+
 }
 
 .animated-text span::after{
@@ -304,7 +309,7 @@ video{
    color: rgb(241, 116, 241);
   }
   41%,60%{
-   content: 'Website Hosting & Domain Reg';
+   content: 'Website Hosting';
    /* color: rgb(241, 116, 241); */
    color: red;
   }
@@ -314,7 +319,7 @@ video{
 
   }
   81%,100%{
-   content: 'And many more';
+   content: 'And many more..';
    /* color: rgb(241, 116, 241); */
    color: red;
   }
@@ -331,3 +336,11 @@ video{
    }
 } 
 /* STYLING FOR THE TYPING TEXT ANIMATION ENDS FROM HERE */
+
+/* STYLING FOR THE ABOUT SECTION STARTS FROM HERE */
+#about{
+   width: 100vw;
+   height: 100vh;
+   color: white;
+   background-color: yellow;
+}
