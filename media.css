@@ -57,10 +57,11 @@
      .btn{
         width: 50px;
         border-radius: 0 8px;
-        font-size: 10px   
+        font-size: 11px   
      }
     
      .btn:hover{
+        width: 50px;
         border-radius: 8 0px;
         font-size: 10px;
         box-shadow: 0 0 0 3px white,
@@ -93,7 +94,7 @@
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text{
    font-size: 17px;
-   font-weight: 300;
+   /* font-weight: 300; */
    min-width: 100%;
    color: white;
 }
