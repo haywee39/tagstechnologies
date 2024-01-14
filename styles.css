@@ -10,7 +10,7 @@ body{
     background: black;
     
 }
-
+/* STYLING FOR THE BUBBLE DROPS BEGINS FROM HERE */
 .bg{
     position: absolute;
     width: 100%;
@@ -51,6 +51,9 @@ body{
     }
 }
 
+/* STYLING FOR THE BUBBLE DROPS ENDS FROM HERE */
+
+/* STYLING FOR THE NAVBAR BEGINS FROM HERE */
 header{
     position: absolute;
     top: 0;
@@ -65,12 +68,6 @@ header{
     /* border-bottom: 1px solid; */
     /* color:transparent; */
 }
-
-:root {
-    /* --bg: #222; */
-    /* --bg: #0c192c; */
-    /* --clr: #fff; */
- }
 
 nav {
     display: flex;
@@ -182,7 +179,9 @@ nav {
     transition: 0.7s;
 
  }
+ /* STYLING FOR THE NAVBAR ENDS FROM HERE */
 
+ /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
  #home{
    position: absolute;
    width: 100%;
@@ -205,8 +204,9 @@ nav {
    position: relative;
    font-size: 80px;
    color: white;
-   margin: 10px 0 0;
-   color: rgb(241, 116, 241);;
+   margin: 10px 0 0 0;
+   /* color: rgb(241, 116, 241);; */
+   color: white;
    overflow: hidden;
    z-index: 1;
    padding-bottom: 20px;
@@ -244,7 +244,9 @@ nav {
 h2 span{
    color: red;
 }
+/* STYLING FOR THE COMPANY NAME ENDS FROM HERE */
 
+/* STYLING FOR THE VID ANIMATION OVER COMPANY NAME BEGINS FROM HERE */
 video{
    position: absolute;
    top: 10;
@@ -255,9 +257,11 @@ video{
    z-index: 2;
    pointer-events: none;
    mix-blend-mode: screen;
-   margin-bottom: 90px;
+   margin-bottom: 160px;
 }
+/* STYLING FOR THE VID ANIMATION OVER COMPANY NAME ENDS FROM HERE */
 
+/* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text{
    font-size: 34px;
    font-weight: 600;
@@ -292,26 +296,27 @@ video{
 }
 @keyframes words{
   0%,20%{
-   content: 'Designer';
+   content: 'Website Design';
    color: red;
   }
   21%,40%{
-   content: 'Coder';
+   content: 'Content Creation';
    color: rgb(241, 116, 241);
   }
   41%,60%{
-   content: 'Youtuber';
-   color: rgb(241, 116, 241);
+   content: 'Website Hosting & Domain Reg';
+   /* color: rgb(241, 116, 241); */
+   color: red;
   }
   61%,80%{
-   content: 'Singer';
+   content: 'Website Domain Registration';
    color: rgb(241, 116, 241);
 
   }
   81%,100%{
-   content: 'Teacher';
-   color: rgb(241, 116, 241);
-
+   content: 'And many more';
+   /* color: rgb(241, 116, 241); */
+   color: red;
   }
    
 }
@@ -325,3 +330,4 @@ video{
        width: calc(100% + 8px);
    }
 } 
+/* STYLING FOR THE TYPING TEXT ANIMATION ENDS FROM HERE */
