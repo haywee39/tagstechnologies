@@ -4,46 +4,31 @@
     box-sizing: border-box;
 }
 
-
-#home{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   background-color: #000;
- }
-
  /* STYLING FOR THE NAVBAR BEGINS FROM HERE */
- .header, .footer {
-   background-color: black;
-   position: absolute;
+ .header{
+   background-color: white;
+   position: fixed;
+   z-index: 1;
    width: 100vw;
-   height: 150px;
-   padding: 0 80px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.card{
-   position: sticky;
-   top: 0;
+   height: 12vh;
    display: flex;
    justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   width: 100vw;
-   height: 100vh;
+   align-items: flex-start;
+   position: fixed;
+   z-index: 1;
 }
+
 nav {
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 20vh;
-   width: 100vw;
-   background: black;
+   min-height: 12vh;
+   width: 100%;
+   /* background: rgb(242, 177, 242); */
+   background-color: whitesmoke;
    padding-right: 70px;
    z-index: 1;
+   position: absolute;
 }
 ul {
    position: relative;
@@ -64,14 +49,14 @@ ul li {
 ul li::before {
    content: '';
    position: absolute;
-   inset: 20px;
+   inset: 18px;
    box-shadow: 0 0 0 10px var(--clr),
                0 0 0 20px var(--bg),
                0 0 0 22px var(--clr);
    transition: 0.5s;
 }
 ul li:hover::before {
-   inset: 10px;
+   inset: 8px;
 }
 ul li::after {
    content: '';
@@ -94,7 +79,7 @@ ul li a {
    align-items: center;
 }
 ul li a i {
-   font-size: 2.5em;
+   font-size: 2.3em;
    transition: 0.5s;
    color: var(--clr);
    opacity: 1;
@@ -123,7 +108,7 @@ ul li a span{
 }
 
 .btn{
-   width: 170px;
+   width: 160px;
    border-radius: 0 20px;
    font-size: 18px;
    background-color: red;
@@ -132,8 +117,8 @@ ul li a span{
 }
 
 .btn:hover{
-   width: 170px;
-   border-radius: 20px 0px;
+   width: 150px;
+   border-radius: 18px 0px;
    font-size: 18px;
    background-color: rgb(241, 116, 241);
    color: white;   
@@ -143,54 +128,28 @@ ul li a span{
 
 }
 /* STYLING FOR THE NAVBAR ENDS FROM HERE */
-
-
-
-
-
-/* STYLING FOR THE BUBBLE DROPS BEGINS FROM HERE */
-.bg{
-    /* position: relative; */
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.card{
+   /* position: sticky; */
+   /* top: 0; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100vw;
+   height: 100vh;
 }
 
-.bubbles{
-    position: absolute;
-    display: flex;
-}
-
-.bubbles span{
-    position: relative;
-    min-width: 30px;
-    height: 30px;
-    background: orangered;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px white,
-    0 0 20px orange,
-    0 0 50px orange;
-    margin: 0 4px;
-    animation: animate 1s linear infinite;
-    animation-duration: calc(100s / var(--i));
-}
-.bubbles span:nth-child(even){
-    background: rgb(241, 116, 241);
-    box-shadow: 0 0 0 2px white,
-    0 0 20px rgb(241, 116, 241),
-    0 0 50px rgb(241, 116, 241);
-}
-@keyframes animate{
-    0%{
-        transform: translateY(-30vh) scale(0);
-    }
-    100%{
-        transform: translateY(100vh) scale(1);
-    }
-}
-
-/* STYLING FOR THE BUBBLE DROPS ENDS FROM HERE */
-
+#home{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #000;
+   /* background-color: whitesmoke; */
+   width: 100vw;
+   height: 100vw;
+   position: relative;
+ }
 
  /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
 
@@ -199,13 +158,16 @@ ul li a span{
    display: flex;
    flex-direction: column;
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    align-items: center;
    justify-content: center;
+   background-color: black;
+   z-index: 10000;
+   /* position: absolute; */
  }
 
  .content h2{
-   position: relative;
+   /* position: relative; */
    font-size: 80px;
    color: white;
    overflow: hidden;
@@ -218,7 +180,6 @@ ul li a span{
  }
 
  .header p{
-   /* position: absolute; */
    font-size: 19px;
    color: white;
  }
@@ -226,11 +187,11 @@ ul li a span{
  
 .content h2::before{
    content: '';
-   position: absolute;
-   right: 120;
-   width: 120%;
+   /* position: absolute; */
+   right: 100;
+   width: 100%;
    height: 100%;
-   background: linear-gradient(45deg,transparent 0%, #000 0%, #000 100%);
+   /* background: linear-gradient(45deg,transparent 0%, #000 0%, #000 100%); */
    animation: fadein 4.5s linear forwards ;
    animation-delay: 4.5s;
 }
@@ -286,8 +247,6 @@ video{
    content:'Designer.';
    color: red;
    animation: words 20s infinite;
-   /* font-weight: 600; */
-
 }
 
 .animated-text span::after{
