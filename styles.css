@@ -6,11 +6,6 @@
 
 
 #home{
-   /* position: absolute; */
-   /* position: sticky; */
-   
-   /* width: 100%; */
-   /* height: 100vh; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -22,11 +17,9 @@
  .header, .footer {
    background-color: black;
    position: absolute;
-   /* top: 0; */
    width: 100vw;
    height: 150px;
    padding: 0 80px;
-   /* z-index: 1; */
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -48,7 +41,6 @@ nav {
    align-items: center;
    min-height: 20vh;
    width: 100vw;
-   /* background: var(--bg); */
    background: black;
    padding-right: 70px;
    z-index: 1;
@@ -72,7 +64,6 @@ ul li {
 ul li::before {
    content: '';
    position: absolute;
-   /* inset: 30px; */
    inset: 20px;
    box-shadow: 0 0 0 10px var(--clr),
                0 0 0 20px var(--bg),
@@ -80,7 +71,6 @@ ul li::before {
    transition: 0.5s;
 }
 ul li:hover::before {
-   /* inset: 15px; */
    inset: 10px;
 }
 ul li::after {
