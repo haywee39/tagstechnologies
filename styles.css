@@ -118,16 +118,6 @@ ul li a span{
 
 }
 /* STYLING FOR THE NAVBAR ENDS FROM HERE */
-/* .card{
-   position: sticky;
-   top: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   width: 100vw;
-   height: 100vh;
-} */
 
 
  /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
@@ -141,7 +131,7 @@ ul li a span{
    z-index: -1;
  }
 
- #home{
+ .home{
    
    display: flex;
    flex-direction: column;
@@ -149,24 +139,89 @@ ul li a span{
    height: 100vh;
    align-items: center;
    justify-content: center;
-   /* background-color: black; */
    color: white;
-   /* background: url(./pexels-soumya-11041434\ \(1080p\).mp4);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: contain;
-    */
+   
  }
 
- #home h2{
-   /* font-family: "Protest Revolution", sans-serif; */
+ .home h2{
+   /* font-family: fantasy; */
+   font-size: 75px;
+   word-spacing: 10px;
+   letter-spacing: 3px;
+   text-align: center;
+   font-weight: bold;
+   animation: change;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   
+}
+@keyframes change {
+ 0%{
+ /* -webkit-text-stroke: 1px white; */
+ color: white;
+ }
+ 25%{
+   -webkit-text-stroke: 2px red;
+ color: transparent;
+ }
+ 50%{
+   -webkit-text-stroke: 2px purple;
+ color: transparent;
+ }
+ 75%{
+   -webkit-text-stroke: 1px yellow;
+ color: transparent;
+ }
+ 100%{
+   -webkit-text-stroke: 2px green;
+ color: transparent;
+ }  
+}
+
+.home .second{
+   /* font-family: fantasy; */
+   display: none;
+   font-size: 75px;
+   word-spacing: 10px;
+   letter-spacing: 3px;
+   text-align: center;
+   font-weight: bold;
+   animation: change;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   
+}
+@keyframes change {
+ 0%{
+ /* -webkit-text-stroke: 1px white; */
+ color: white;
+ }
+ 25%{
+   -webkit-text-stroke: 2px red;
+ color: transparent;
+ }
+ 50%{
+   -webkit-text-stroke: 2px purple;
+ color: transparent;
+ }
+ 75%{
+   -webkit-text-stroke: 1px yellow;
+ color: transparent;
+ }
+ 100%{
+   -webkit-text-stroke: 2px green;
+ color: transparent;
+ }  
+}
+
+ /* .home h2{
    font-size: 75px;
    color: white;
    overflow: hidden;
    padding-top: 100px;
- }
+ } */
 
- #home h2 span{
+ .home h2 span{
    color: orangered;
  }
   
