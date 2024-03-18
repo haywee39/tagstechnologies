@@ -15,8 +15,8 @@ nav {
    align-items: center;
    min-height: 12vh;
    width: 100%;
-   background-color: antiquewhite;
-   background-color: transparent;
+   background-color: grey;
+   /* background-color: transparent; */
    z-index: 1;
   
 }
