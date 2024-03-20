@@ -6,6 +6,10 @@
     font-family: 'poppins', sans-serif;
 }
 
+body{
+   scroll-behavior: smooth;
+}
+
  /* STYLING FOR THE NAVBAR BEGINS FROM HERE */
 
 nav {

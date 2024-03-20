@@ -1,7 +1,7 @@
 @media (width < 768px ) {
 
     nav{
-        /* min-height: 12vh; */
+        min-height: 12vh;
         width: 100%;
         /* padding-right: 25px; */
     }
@@ -22,10 +22,10 @@
         inset: 5px;
      }
      ul li a i {
-        font-size: 1.2em;
+        font-size: 1.5em;
      }
      ul li:hover a span {
-        font-size: 10px;
+        font-size: 12px;
      }
      ul li:hover a i,
      ul li a span{
@@ -34,20 +34,20 @@
     
 
 
-     /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
+/* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
  .home{
     width: 100%;
     height: 100vh;
   }
   .home h2{
     max-width: 100%;
-    font-size: 80px;
+    font-size: 75px;
   }
  
 
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text p{
-   font-size: 16px;
+   font-size: 14px;
 }
 
 .animated-text{
