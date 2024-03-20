@@ -142,11 +142,8 @@ ul li a span{
  }
 
  .home h2{
-   /* font-family: 'Trebuchet MS'; */
    font-size: 100px;
-   /* color: white; */
    word-spacing: 10px;
-   /* letter-spacing: 2px; */
    text-align: center;
    font-weight: bold;
    animation: change;
@@ -189,12 +186,11 @@ ul li a span{
 .animated-text p{
    /* margin-top: 10px; */
    font-size: 20px;
-   /* color: #185ec7; */
-   color: white;
+   color: #185ec7;
+   /* color: white; */
 }
 .animated-text{
    padding-top: 30px;
-   /* z-index: 1; */
    font-size: 22px;
    min-width: 280px;
    color: white;
@@ -232,27 +228,27 @@ ul li a span{
 @keyframes words{
   0%,20%{
    content: 'Website/ Landing Page Design';
-   color: orangered;
+   color: #185ec7;
   }
   21%,40%{
    content: 'Content Creation';
-   color: orangered;
+   color: #185ec7;
    /* color: rgb(241, 116, 241); */
   }
   41%,60%{
    content: 'Website Hosting';
    /* color: rgb(241, 116, 241); */
-   color: orangered;
+   color: #185ec7;
   }
   61%,80%{
    content: 'Website Domain Registration';
-   color: orangered;
+   color: #185ec7;
 
   }
   81%,100%{
    content: 'And many more..';
    /* color: rgb(241, 116, 241); */
-   color: orangered;
+   color: #185ec7;
   }
    
 }
