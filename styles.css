@@ -98,9 +98,10 @@ ul li a span{
 }
 
 .btn{
-   width: 160px;
-   border-radius: 0 20px;
-   font-size: 18px;
+   width: 140px;
+   height: 55px;
+   border-radius: 20px;
+   font-size: 15px;
    background-color: white;
    border: none;
    color: #0c192c;   
@@ -109,11 +110,8 @@ ul li a span{
 .btn:hover{
    width: 150px;
    border-radius: 18px 0px;
-   font-size: 18px;
    background-color: rgb(241, 116, 241);
    color: white;   
-   box-shadow: 0 0 0 5px white,
-   0 0 0 5px white;
    transition: 0.3s;
 
 }
@@ -144,86 +142,44 @@ ul li a span{
  }
 
  .home h2{
-   /* font-family: fantasy; */
-   font-size: 75px;
+   /* font-family: 'Trebuchet MS'; */
+   font-size: 100px;
+   /* color: white; */
    word-spacing: 10px;
-   letter-spacing: 3px;
+   /* letter-spacing: 2px; */
    text-align: center;
    font-weight: bold;
    animation: change;
-   animation-duration: 6s;
+   animation-duration: 3s;
    animation-iteration-count: infinite;
    
 }
 @keyframes change {
  0%{
- /* -webkit-text-stroke: 1px white; */
- color: white;
+ -webkit-text-stroke: 2px orangered;
+ color: transparent;
+ filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px white) drop-shadow(0 0 60px white);
  }
  25%{
-   -webkit-text-stroke: 2px red;
- color: transparent;
+   color: orange;
  }
  50%{
-   -webkit-text-stroke: 2px purple;
- color: transparent;
+   -webkit-text-stroke: 2px blue;
+   color: transparent;
+   filter: drop-shadow(0 0 20px skyblue) drop-shadow(0 0 40px skyblue) drop-shadow(0 0 60px skyblue);
  }
  75%{
-   -webkit-text-stroke: 1px yellow;
- color: transparent;
+   color: skyblue;
  }
  100%{
-   -webkit-text-stroke: 2px green;
- color: transparent;
- }  
+   -webkit-text-stroke: 2px white;
+   color: transparent;
+   filter: drop-shadow(0 0 20px orange) drop-shadow(0 0 40px orange) drop-shadow(0 0 60px orange);
+ } 
+  
 }
 
-.home .second{
-   /* font-family: fantasy; */
-   display: none;
-   font-size: 75px;
-   word-spacing: 10px;
-   letter-spacing: 3px;
-   text-align: center;
-   font-weight: bold;
-   animation: change;
-   animation-duration: 6s;
-   animation-iteration-count: infinite;
-   
-}
-@keyframes change {
- 0%{
- /* -webkit-text-stroke: 1px white; */
- color: white;
- }
- 25%{
-   -webkit-text-stroke: 2px red;
- color: transparent;
- }
- 50%{
-   -webkit-text-stroke: 2px purple;
- color: transparent;
- }
- 75%{
-   -webkit-text-stroke: 1px yellow;
- color: transparent;
- }
- 100%{
-   -webkit-text-stroke: 2px green;
- color: transparent;
- }  
-}
 
- /* .home h2{
-   font-size: 75px;
-   color: white;
-   overflow: hidden;
-   padding-top: 100px;
- } */
-
- .home h2 span{
-   color: orangered;
- }
   
 /* STYLING FOR THE COMPANY NAME ENDS FROM HERE */
 
@@ -260,13 +216,16 @@ ul li a span{
    position: absolute;
    width: calc(100% + 8px);
    height: 100%;
-   /* border-left: 1px solid rgb(241, 116, 241); */
+   /* border-right: 1px solid rgb(241, 116, 241); */
+   /* border-left: 1px solid orangered; */
    right: -8px;
    animation: cursor .6s infinite,typing 20s steps(14) infinite;
 }
 @keyframes cursor{
    to{
-       /* border-left: 2px solid rgb(241, 116, 241); */
+       /* border-left: 20px solid rgb(241, 116, 241); */
+       border-left: 20px solid orangered;
+       filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px white) drop-shadow(0 0 60px white);
    }
 }
 @keyframes words{
@@ -276,7 +235,8 @@ ul li a span{
   }
   21%,40%{
    content: 'Content Creation';
-   color: rgb(241, 116, 241);
+   color: orangered;
+   /* color: rgb(241, 116, 241); */
   }
   41%,60%{
    content: 'Website Hosting';
@@ -285,7 +245,7 @@ ul li a span{
   }
   61%,80%{
    content: 'Website Domain Registration';
-   color: rgb(241, 116, 241);
+   color: orangered;
 
   }
   81%,100%{

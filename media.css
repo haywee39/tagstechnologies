@@ -52,28 +52,22 @@
     height: 100vh;
   }
   .home h2{
-   display: none;
-    /* max-width: 100%; */
-    font-size: 50px;
-  }
-
-  .home .second{
-   display: flex;
-   /* font-size: 50px; */
+   /* display: none; */
+    max-width: 100%;
+    font-size: 60px;
   }
  
 
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text p{
    font-size: 14px;
-   /* color: yellow; */
 }
+
 .animated-text{
    font-size: 18px;
    min-width: 100%;
    color: white;
 }
-
 
 #about{
    width: 100%;
