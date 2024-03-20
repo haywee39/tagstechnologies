@@ -54,17 +54,17 @@
   .home h2{
    /* display: none; */
     max-width: 100%;
-    font-size: 60px;
+    font-size: 80px;
   }
  
 
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 .animated-text p{
-   font-size: 14px;
+   font-size: 18px;
 }
 
 .animated-text{
-   font-size: 18px;
+   font-size: 20px;
    min-width: 100%;
    color: white;
 }
