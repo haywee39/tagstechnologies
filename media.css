@@ -31,19 +31,7 @@
      ul li a span{
         filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white) drop-shadow(0 0 30px white);
      }
-     .btn{
-        width: 50px;
-        border-radius: 0 8px;
-        font-size: 11px; 
-     }
     
-     .btn:hover{
-        width: 50px;
-        border-radius: 8 0px;
-        font-size: 10px;
-        box-shadow: 0 0 0 3px white,
-        0 0 0 3px white;
-     }
 
 
      /* STYLING FOR THE COMPANY NAME BEGINS FROM HERE */
@@ -65,7 +53,6 @@
 .animated-text{
    font-size: 20px;
    min-width: 100%;
-   color: white;
 }
 
 #about{

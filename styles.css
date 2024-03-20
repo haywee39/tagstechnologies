@@ -15,8 +15,7 @@ nav {
    align-items: center;
    min-height: 12vh;
    width: 100%;
-   background-color: grey;
-   /* background-color: transparent; */
+   background: linear-gradient(to left,orange 10%, rgb(241, 116, 241) 50%, #185ec7 100%);
    z-index: 1;
   
 }
@@ -97,24 +96,6 @@ ul li a span{
    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px white) drop-shadow(0 0 60px white);
 }
 
-.btn{
-   width: 140px;
-   height: 55px;
-   border-radius: 20px;
-   font-size: 15px;
-   background-color: white;
-   border: none;
-   color: #0c192c;   
-}
-
-.btn:hover{
-   width: 150px;
-   border-radius: 18px 0px;
-   background-color: rgb(241, 116, 241);
-   color: white;   
-   transition: 0.3s;
-
-}
 /* STYLING FOR THE NAVBAR ENDS FROM HERE */
 
 
@@ -147,35 +128,26 @@ ul li a span{
    text-align: center;
    font-weight: bold;
    animation: change;
-   animation-duration: 3s;
+   animation-duration: 6s;
    animation-iteration-count: infinite;
    
 }
 @keyframes change {
  0%{
- -webkit-text-stroke: 2px orangered;
- color: transparent;
- filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px white) drop-shadow(0 0 60px white);
+ color: #185ec7;
  }
- 25%{
-   color: orange;
- }
+ 
  50%{
-   -webkit-text-stroke: 2px #185ec7;
-   color: transparent;
-   filter: drop-shadow(0 0 20px skyblue) drop-shadow(0 0 40px skyblue) drop-shadow(0 0 60px skyblue);
+   /* -webkit-text-stroke: 2px #185ec7; */
+   color: orange;
+   filter: drop-shadow(0 0 40px rgb(241, 116, 241)) drop-shadow(0 0 40px #185ec7) drop-shadow(0 0 40px orange);
  }
- 75%{
-   color: skyblue;
- }
+ 
  100%{
-   -webkit-text-stroke: 2px white;
-   color: transparent;
-   filter: drop-shadow(0 0 20px orange) drop-shadow(0 0 40px orange) drop-shadow(0 0 60px orange);
+   color: rgb(241, 116, 241);
  } 
   
 }
-
 
   
 /* STYLING FOR THE COMPANY NAME ENDS FROM HERE */
@@ -184,17 +156,17 @@ ul li a span{
 /* STYLING FOR THE TYPING TEXT ANIMATION BEGINS FROM HERE */
 
 .animated-text p{
-   /* margin-top: 10px; */
    font-size: 20px;
-   color: #185ec7;
-   /* color: white; */
+   color: orange;
 }
+
 .animated-text{
    padding-top: 30px;
    font-size: 22px;
    min-width: 280px;
-   color: white;
+   color: #185ec7;
    text-align: center;
+   filter: drop-shadow(0 0 50px rgb(241, 116, 241)) drop-shadow(0 0 20px #185ec7) drop-shadow(0 0 50px orange);
 }
 
 .animated-text span{
@@ -203,7 +175,7 @@ ul li a span{
 
 .animated-text span::before{
    content:'Designer.';
-   color: orangered;
+   color: white;
    animation: words 20s infinite;
 }
 
@@ -213,41 +185,37 @@ ul li a span{
    position: absolute;
    width: calc(100% + 8px);
    height: 100%;
-   /* border-right: 1px solid rgb(241, 116, 241); */
    /* border-left: 1px solid orangered; */
    right: -8px;
    animation: cursor .6s infinite,typing 20s steps(14) infinite;
 }
 @keyframes cursor{
    to{
-       /* border-left: 20px solid rgb(241, 116, 241); */
-       border-left: 20px solid orangered;
+       border-left: 20px solid white;
        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 40px white) drop-shadow(0 0 60px white);
    }
 }
 @keyframes words{
   0%,20%{
    content: 'Website/ Landing Page Design';
-   color: #185ec7;
+   color: rgb(241, 116, 241);
+   /* color: #185ec7; */
   }
   21%,40%{
    content: 'Content Creation';
-   color: #185ec7;
-   /* color: rgb(241, 116, 241); */
+   color: orange;
   }
   41%,60%{
    content: 'Website Hosting';
-   /* color: rgb(241, 116, 241); */
    color: #185ec7;
   }
   61%,80%{
    content: 'Website Domain Registration';
-   color: #185ec7;
+   color: rgb(241, 116, 241);
 
   }
   81%,100%{
    content: 'And many more..';
-   /* color: rgb(241, 116, 241); */
    color: #185ec7;
   }
    
